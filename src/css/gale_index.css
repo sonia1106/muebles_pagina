@@ -1,0 +1,61 @@
+.galeria {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.contenedor {
+    background-color: #e1dbdb; 
+    padding-bottom: 3cqmin;    
+}
+
+/* Contenedor de la galería */
+.cont_gale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Configuración de la cuadrícula de la galería */
+.gale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre imágenes */
+    max-width: 1200px;
+}
+
+.gale_item {
+    width: 277px; /* Ancho de la tarjeta */
+    height: 283px; /* Altura de la tarjeta */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Animación en hover */
+    display: flex; /* Para centrar contenido si es necesario */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.gale_item:hover {
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+.img_gale {
+    width: 100%; /* Tomar el ancho completo de la tarjeta */
+    height: 100%; /* Tomar la altura completa de la tarjeta */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .gale {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Espacio entre imágenes ajustado */
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .gale_item {
+        align-items: center;
+        }
+}

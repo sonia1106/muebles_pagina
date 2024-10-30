@@ -1,0 +1,81 @@
+/* Contenedor principal de servicios */
+.sec_serv {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.servicios_cont {
+    margin-bottom: 30px;
+}
+
+.cont_titu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #333;
+}
+
+.titulo1 {
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding-right: 8px;
+    color: #555;
+}
+
+.titulo2 {
+    color: #4bc668;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos de cada tarjeta de servicio */
+.card_servicio {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card_servicio:hover {
+    transform: translateY(-30px);
+}
+
+.img_ser {
+    width: 80px;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.titulo_ser {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.ser_serv {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Responsive para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .servicios {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}

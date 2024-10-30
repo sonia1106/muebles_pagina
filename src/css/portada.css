@@ -1,0 +1,22 @@
+/* Estilos para el contenedor de la portada */
+.sec_porta {
+    display: flex;                  
+    justify-content: center;        
+    align-items: center;            
+    height: calc(100vh - 60px);    /* Ajusta la altura de la portada restando la altura del encabezado */
+    background-color: #f0f0f0;     
+               /* Espacio superior para evitar que la portada cubra el encabezado */
+}
+
+.porta {              
+    width: 100%;                   
+    overflow: hidden;              
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img_portada{
+    width: 100%;                   
+    height: auto;                  
+              
+}
+

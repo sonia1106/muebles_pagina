@@ -1,0 +1,107 @@
+
+header {
+    display: flex;                  /* Distribuye el logo y el menú horizontalmente */
+    justify-content: center; /* Coloca el logo a la izquierda y el menú a la derecha */
+    align-items: center;            /* Centra verticalmente el contenido */
+    padding: 15px 30px;             /* Espacio interno del header */
+    background-color: #333;         /* Fondo oscuro para el header */
+    color: #fff;   
+    flex-direction: column;
+    position: fixed;                /* Fijar el encabezado en la parte superior */
+    top: 0;                        
+    left: 0;                       
+    width: 100%;                  
+    height: 60px;                  /* Ajusta según la altura de tu encabezado */
+    z-index: 1000;                /* Asegúrate de que esté por encima de otros elementos */
+    
+}
+
+header img {
+    display: flex;
+    justify-content: center;
+    width: 100px;                   /* Ancho del logo */
+    height: auto;                   /* Altura automática para mantener proporción */
+}
+
+.lis_he {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.lis_nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.iten_nav {
+    font-size: 16px;
+}
+
+.link_iten {
+    
+    .link_inicio {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #007BFF; /* Color de fondo */
+        color: white; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+    
+    .link_inicio:hover {
+        background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    }
+
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.link_iten:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+        height: auto; /* Permite que el header se ajuste en altura automáticamente */
+    }
+
+    .lis_he {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .lis_nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Reduce el espacio entre los elementos */
+    }
+
+    .link_iten {
+        padding: 6px 10px; /* Reduce el espaciado interno en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 8px 15px;
+    }
+
+    header img {
+        width: 80px; /* Reduce el tamaño del logo en dispositivos móviles */
+    }
+
+    .link_iten {
+        font-size: 14px; /* Tamaño de fuente reducido para pantallas pequeñas */
+    }
+}
